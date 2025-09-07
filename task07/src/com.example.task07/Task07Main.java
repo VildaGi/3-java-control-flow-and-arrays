@@ -15,8 +15,13 @@ public class Task07Main {
     }
 
     static int sum(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        if (arr.length == 0){
+            return 0;
+        }
+        int s = 0;
+        for(int item : arr)
+            s += item;
+        return s;
     }
 
 }
